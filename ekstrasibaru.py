@@ -55,7 +55,7 @@ def doThis(filenya,labelnya, namafile):
         writer.writerow(datafitur)
     return
 
-path = "D:\ADIT\PCD\Adit\KOMPUTER"
+path = "D:\ADIT\PCD\Adit\SEPATU"
 label = input("Label Gambar ? ")
 for file in os.listdir(path):
     current_file = os.path.join(path, file)
