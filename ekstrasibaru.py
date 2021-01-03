@@ -49,13 +49,13 @@ def doThis(filenya,labelnya, namafile):
     datafitur = list(feats)
     datafitur.append(labelnya)
     
-    dataSet = "DataIkan.csv"
+    dataSet = "DatasetGambar.csv"
     with open(dataSet, "a") as f :
         writer = csv.writer(f)
         writer.writerow(datafitur)
     return
 
-path = "D:\ADIT\PCD\D\BLUE TANG FISH"
+path = "D:\ADIT\PCD\Adit\Komputer"
 label = input("Label Gambar ? ")
 for file in os.listdir(path):
     current_file = os.path.join(path, file)
